@@ -1,0 +1,39 @@
+# College Feedback Classifier (Powered by IBM watsonx.ai)
+
+This project is an AI-powered web application that classifies open-ended student feedback into categories such as Academics, Facilities, and Administration using foundation models from IBM watsonx.ai. It is designed to help educational institutions streamline the feedback analysis process and make data-driven decisions.
+
+---
+
+## Features
+
+- Classifies qualitative student feedback into predefined categories
+- Uses prompt-based foundation models like FLAN-T5 or Mistral
+- Simple and interactive interface built with Streamlit
+- Easily extendable for batch classification via CSV
+- Lightweight, API-driven backend for real-time predictions
+
+---
+
+## Project Structure
+
+college_feedback_classifier/
+├── app.py # Streamlit UI
+├── classifier.py # IBM watsonx.ai API handler
+├── prompt_templates.py # Prompt templates used for classification
+├── requirements.txt # Python dependencies
+└── README.md # Project overview and setup instructions
+
+yaml
+Copy
+Edit
+
+---
+
+## How It Works
+
+1. The user inputs student feedback into the UI.
+2. The app constructs a prompt using few-shot examples and sends it to the foundation model via the watsonx.ai API.
+3. The model responds with a predicted category.
+4. The UI displays the result instantly to the user.
+
+---
