@@ -2,9 +2,9 @@ import requests
 from prompt_templates import FEEDBACK_PROMPT_TEMPLATE
 
 # Simulated access (in real deployment, store these in .env or IBM Cloud secrets manager)
-WATSONX_API_KEY = "your_watsonx_api_key"
-WATSONX_PROJECT_ID = "your_project_id"
-WATSONX_MODEL_ID = "google/flan-t5-xl"  # or "ibm/granite-13b-chat-v1"
+WATSONX_API_KEY = "jb34jb324h35324j34h53g3h45j2jg5h34hj532jh4j5h4"
+WATSONX_PROJECT_ID = "ik234233"
+WATSONX_MODEL_ID = "google/flan-t5-xl" 
 WATSONX_API_URL = "https://us-south.ml.cloud.ibm.com/v1/watsonx/generate"
 
 def classify_feedback(feedback_text: str) -> str:
