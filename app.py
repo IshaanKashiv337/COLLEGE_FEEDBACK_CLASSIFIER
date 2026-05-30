@@ -12,7 +12,7 @@ def main():
             try:
                 result = classify_feedback(feedback)
                 st.success("Prediction Complete!")
-                st.markdown("### 📘 Predicted Category")
+                st.markdown("### Predicted Category")
                 st.code(result)
             except Exception as e:
                 st.error(f"API call failed: {str(e)}")
