@@ -3,7 +3,7 @@ from classifier import classify_feedback
 
 def main():
     st.set_page_config(page_title="College Feedback Classifier", layout="centered")
-    st.title("🎓 College Feedback Classifier (Powered by watsonx.ai)")
+    st.title("College Feedback Classifier (Powered by watsonx.ai)")
     st.write("Classify open-ended student feedback into categories using IBM Foundation Models.")
 
     feedback = st.text_area("Enter student feedback:", height=200)
